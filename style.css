@@ -1,0 +1,532 @@
+:root{
+    --main-color: #00aa88;
+    --head-text: #8c89a2;
+    --bold-text: #3f3a64;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+
+/* Navbar Styling */
+
+
+header{
+    display: flex;
+    margin: 0 auto;
+    box-shadow: 1px 2px 3px var(--head-text);
+    justify-content: space-around;
+    align-items: center;
+    padding: 1% 11%;
+
+}
+
+.Logo{
+    display: flex;
+    align-items: center;
+    gap: 6px
+}
+
+
+.Logo h1{
+    font-family: 'Jost', 'sans-serif';
+    color: var(--bold-text);
+    position: relative;
+}
+
+.fa-code{
+    font-size: 1.5rem;
+}
+
+.Logo h1 span, .fa-code{
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+.Navlink{
+    flex: 1;
+    text-align: right;
+}
+
+.Navlink ul li{
+    display: inline-block;
+    padding: 12px 16px;
+    
+}
+
+.link{
+    color: var(--bold-text);
+    font-family: 'Jost';
+    font-size: 20px;
+}
+
+.link:hover{
+    color: var(--main-color);
+}
+#active{
+    color: var(--main-color) !important;
+}
+
+.mixed{
+    font-family: 'Jost', sans-serif;
+}
+
+.light{
+    font-weight: 100;
+}
+
+.title{
+    font-family: 'Jost';
+    color: var(--head-text);
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    display: block;
+}
+
+section{
+    margin: 50px 0;
+}
+
+
+#menu{
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.menu{
+    padding: 15px;
+    background-color: var(--main-color);
+    color: var(--head-text);
+    display: none
+}
+
+/* Hero Section Styling */
+
+@media screen and (max-width: 1224px){
+    .menu{
+        display: inline-block;
+        z-index: 3;
+        cursor: pointer;;
+    }
+    .Navlink{
+        width: 0;
+    }
+    .Navbar{
+        height: 40vh;
+        z-index: 3;
+        position: absolute;
+        top: 30px;
+        right: 0;
+        width: 0;
+        /* display: none; */
+        background-color: #8c89a2;
+        margin-top: 30px;
+        transition: all 1s ease-in-out;
+        overflow-y: hidden;
+    }
+    .Navlink ul li{
+        display: block;
+        height: 30px;
+    }
+    .link, #active{
+        display: block;
+        color: #ffc !important;
+        text-align: center;
+        padding: 14px 24px;
+    }
+
+    .link:hover, #active:hover{
+        background-color: var(--main-color) !important;
+
+    }
+
+    .hero{
+        flex-direction: column-reverse;
+    }
+    .hero .mixed{
+        font-size: 2rem !important;
+    }
+    .left p{
+        width: 60%;
+        margin: auto;
+    }
+    .hero .btn{
+        margin-top: 10px;
+    }
+    p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .hero img{
+        flex-basis: 100%;
+    }
+    .left{
+        text-align: center;
+        flex-basis: 100%;
+    }
+    .service-container{
+        flex-direction: column;
+    }
+    .service-box{
+        width: 70%;
+        display: block;
+    }
+
+    .record-box .fa-solid{
+        font-size: 1.5rem !important;
+        
+    }
+
+    .about-me{
+        flex-direction: column;
+    }
+    .about-img{
+        flex-basis: 100%;
+        margin: 30px 0 20px;
+    }
+    .about-desc{
+        flex-basis: 100%;
+    }
+    .about-desc .title, .about-desc > .mixed{
+        text-align: center;
+    }
+    .contact{
+        text-align: center;
+    }
+    .end{
+        flex-direction: column;
+        text-align: center;
+    }
+    .brands{
+        margin: 20px auto;
+    }
+}
+
+.hero img{
+    flex-basis: 30%;
+}
+
+.hero{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.left{
+    flex-basis: 50%;
+}
+
+.hero .mixed{
+    font-size: 2.5rem;
+    color: var(--bold-text);
+}
+
+.hero p {
+    line-height: 30px;
+    font-family: 'Jost', 'sans-serif';
+}
+
+.hero p span{
+    font-weight: 700;
+}
+
+.hero p span:last-child{
+    color: #fc1178;
+    font-weight: 500;
+}
+
+.btns{
+    margin: 30px 0;
+}
+
+.btn{
+    padding: 16px 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.1rem;
+
+}
+
+
+.btn1{
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+    color: white;
+}
+
+.btn2{
+    border: 1px solid var(--main-color);
+    background-color: transparent;
+    color: var(--main-color);
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #008888;
+    color: white;
+}
+
+
+
+/* About Section */
+
+.about-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.about-img img{
+    border-radius: 10px;
+    height: 500px;
+}
+.about-img{
+    flex-basis: 40%;
+}
+
+.about-desc{
+    flex-basis: 50%;
+}
+.about-desc .mixed{
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.about-desc p{
+    line-height: 28px;
+    font-family: 'Jost';
+}
+
+.about-desc p span{
+    font-weight: bold;
+}
+
+.about-desc .btn{
+    margin-top: 30px;
+}
+
+.about-desc p span:last-child{
+    color: #fc1178;
+    font-weight: 500;
+}
+
+
+/* Portfolio Section */
+
+.portfolio {
+    background-color: #eee;
+    width: 100%;
+}
+
+.container{
+    padding: 3% 10%;
+}
+
+.container .title{
+    display: block;
+    margin: 15px 0;
+}
+
+.container .mixed{
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.container p{
+    font-family: 'Jost', sans-serif;
+    line-height: 26px;
+    color: var(--bold-text);
+    width: 80%;
+}
+
+.container button{
+    margin: 10px 0;
+}
+
+
+
+/* Services Section */
+
+.service{
+    text-align: center;
+}
+
+.service > .mixed{
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.service-container{
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+.service-box{
+    background-color: #eee;
+    padding: 30px;
+    text-align: left;
+    /* width: 30%; */
+    border-radius: 12px;
+    font-family: 'Jost';
+}
+
+.index{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+}
+
+
+.index .line{
+    padding: 2px;
+    border-radius: 20px;
+    width: 17%;
+    background: var(--main-color);
+}
+.service-box .title{
+    font-size: 2.8rem;
+}
+
+.service-box .mixed{
+    font-size: 1.6rem;
+    margin-bottom: 14px;
+}
+
+.service-btn{
+    color: var(--bold-text);
+    margin-top: 12px;
+    display: inline-block;
+    font-weight: bold;
+    position: relative;
+}
+
+.service-btn::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 25%;
+    background-color: var(--main-color);
+    height: 2px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.service-btn:hover::after{
+    width: 100%;
+}
+
+.record > .mixed, .record > .title{
+    display: block;
+    text-align: center;
+    margin: 20px;
+}
+
+.record{
+    width: 100%;
+    background-color: #eee;
+    padding: 4% 0;
+}
+
+.record .record-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 40px;
+}
+
+.record-box{
+    width: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.record-box .title{
+    font-size: 2rem;
+}
+
+.record-box i{
+    font-size: 2.5rem !important ;
+    color: var(--main-color);
+}
+
+
+.record-box h3{
+    font-weight: 500;
+}
+
+.contact{
+    text-align: center;
+}
+
+.contact .title{
+    font-size: 1rem;
+}
+
+.contact > .mixed{
+    font-weight: 300;
+    font-size: 2rem;
+    margin: 10px 0 20px;
+}
+
+.end{
+    display: flex;
+    width: 100%;
+    padding: 20px 0 0;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.end i{
+    color: var(--head-text);
+    font-size: 2rem;
+    margin: 0 10px;
+}
+
+.end .mixed span{
+    font-weight: 700;
+}
+
+.brands{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+
+}
+
+.end .mixed span:last-child{
+    color: var(--main-color);
+    font-weight: 300;
+}
+
+.brands i:hover{
+    cursor: pointer;
+    color: var(--main-color);
+}
