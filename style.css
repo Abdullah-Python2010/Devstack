@@ -116,6 +116,7 @@ section{
     }
     .Navlink{
         width: 0;
+        overflow-x: hidden;
     }
     .Navbar{
         height: 40vh;
@@ -162,6 +163,7 @@ section{
     p{
         font-size: 15px;
         line-height: 20px;
+        width: 80%;
     }
     .hero img{
         flex-basis: 100%;
@@ -180,7 +182,8 @@ section{
 
     .record-box .fa-solid{
         font-size: 1.5rem !important;
-        
+        margin-bottom: 20px;
+        display: block;
     }
 
     .about-me{
@@ -192,16 +195,28 @@ section{
     }
     .about-desc{
         flex-basis: 100%;
+        margin: 10px auto;
     }
+    .about-desc p{
+        margin: auto;
+    }
+    .about-desc .btn{
+        display: block;
+        margin: auto;
+    }
+
     .about-desc .title, .about-desc > .mixed{
         text-align: center;
     }
+
+
+
     .contact{
         text-align: center;
     }
     .end{
         flex-direction: column;
-        text-align: center;
+        /* text-align: center; */
     }
     .brands{
         margin: 20px auto;
